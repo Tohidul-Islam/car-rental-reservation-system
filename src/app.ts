@@ -11,8 +11,7 @@ app.use(cors({ origin: ['http://localhost:5173'] }));
 app.use('/api/v1', router);
 
 const test = async (req: Request, res: Response) => {
-  // Promise.reject();
-  res.send('Hello World!');
+  res.send('Hello Car rental World!');
 };
 app.get('/', test);
 
